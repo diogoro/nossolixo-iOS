@@ -16,7 +16,11 @@ enum Result<T> {
 typealias ReturnCategoriesRequests = (Result<[Category]>) -> Void
 typealias ReturnPlacesRequests = (Result<[Place]>) -> Void
 
-protocol ApiNossoLixo {
+protocol NossoLixoServiceInterface {
     func getCategories(completion: @escaping ReturnCategoriesRequests)
     func getPlaces(completion: @escaping ReturnPlacesRequests)
+}
+
+struct GenericError: Error {
+    
 }

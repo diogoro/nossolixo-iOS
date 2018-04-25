@@ -15,6 +15,10 @@
 		78CC9CAE208A60CF00980BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CC9CAC208A60CF00980BD7 /* LaunchScreen.storyboard */; };
 		78CC9CB9208A60CF00980BD7 /* NossoLixoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC9CB8208A60CF00980BD7 /* NossoLixoTests.swift */; };
 		78CC9CC4208A60CF00980BD7 /* NossoLixoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC9CC3208A60CF00980BD7 /* NossoLixoUITests.swift */; };
+		78CC9CD4208F971800980BD7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC9CD3208F971800980BD7 /* Category.swift */; };
+		78CC9CD6208F978300980BD7 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC9CD5208F978300980BD7 /* Place.swift */; };
+		78CC9CD820904D8200980BD7 /* NossoLixoServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC9CD720904D8200980BD7 /* NossoLixoServiceInterface.swift */; };
+		78CC9CDA20904E7E00980BD7 /* NossoLixoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC9CD920904E7E00980BD7 /* NossoLixoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		78CC9CBF208A60CF00980BD7 /* NossoLixoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NossoLixoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CC9CC3208A60CF00980BD7 /* NossoLixoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NossoLixoUITests.swift; sourceTree = "<group>"; };
 		78CC9CC5208A60CF00980BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CC9CD3208F971800980BD7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		78CC9CD5208F978300980BD7 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		78CC9CD720904D8200980BD7 /* NossoLixoServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NossoLixoServiceInterface.swift; sourceTree = "<group>"; };
+		78CC9CD920904E7E00980BD7 /* NossoLixoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NossoLixoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		78CC9CA0208A60CD00980BD7 /* NossoLixo */ = {
 			isa = PBXGroup;
 			children = (
+				78CC9CD2208F96B900980BD7 /* Models */,
+				78CC9CD1208F96AA00980BD7 /* Api */,
 				78CC9CA1208A60CD00980BD7 /* AppDelegate.swift */,
 				78CC9CA3208A60CD00980BD7 /* MasterViewController.swift */,
 				78CC9CA5208A60CD00980BD7 /* DetailViewController.swift */,
@@ -126,6 +136,24 @@
 				78CC9CC5208A60CF00980BD7 /* Info.plist */,
 			);
 			path = NossoLixoUITests;
+			sourceTree = "<group>";
+		};
+		78CC9CD1208F96AA00980BD7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				78CC9CD720904D8200980BD7 /* NossoLixoServiceInterface.swift */,
+				78CC9CD920904E7E00980BD7 /* NossoLixoService.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		78CC9CD2208F96B900980BD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78CC9CD3208F971800980BD7 /* Category.swift */,
+				78CC9CD5208F978300980BD7 /* Place.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +289,11 @@
 			files = (
 				78CC9CA6208A60CD00980BD7 /* DetailViewController.swift in Sources */,
 				78CC9CA4208A60CD00980BD7 /* MasterViewController.swift in Sources */,
+				78CC9CD820904D8200980BD7 /* NossoLixoServiceInterface.swift in Sources */,
 				78CC9CA2208A60CD00980BD7 /* AppDelegate.swift in Sources */,
+				78CC9CD4208F971800980BD7 /* Category.swift in Sources */,
+				78CC9CD6208F978300980BD7 /* Place.swift in Sources */,
+				78CC9CDA20904E7E00980BD7 /* NossoLixoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -421,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
